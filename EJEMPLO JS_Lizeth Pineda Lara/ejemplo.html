@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="ejercicio1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <title>JS - EJERCICIO1</title>
+</head>
+<body>
+    <header>
+        <h1>¡ESPERA LA APERTURA DE COMEDOR SOL!</h1>
+        <section class="menu">
+            <ul class="menu-list"> 
+                <li class="activado">RESERVACIONES</li>
+                <li>Promociones</li>
+                <li>Instalaciones</li>
+                <li>Comentarios</li>
+            </ul>
+
+            <button>
+                <i class="fas fa-times"></i>
+                <i class="fas fa-bars"></i>
+            </button>
+        </section>
+    </header>
+
+    <section class="main">
+        <section class="left">
+            <p class="title">Comedor sol</p>
+            <p class="msg">¡Te invitamos a disfrutar de una deliciosa comida en el Comedor Sol! Ven y prueba nuestros platillos caseros llenos de sabor, preparados con ingredientes frescos y con mucho cariño. Ya sea que busques un almuerzo rápido o una comida para compartir en familia, en **Comedor Sol** encontrarás un ambiente acogedor y un menú variado que se ajusta a todos los gustos. 
+                ¡No te lo pierdas y ven a disfrutar de una experiencia culinaria que te encantará!</p>
+            <button class="cta">¡RESERVA YA!</button>
+        </section>
+
+        <section class="right">
+            <img src="Img2.jpg" alt="no se puede mostrar la imagen">
+        </section>
+    </section>
+
+    <script>
+        var menu = document.querySelector('.menu');
+        var menuBTN = document.querySelector('button');
+
+        menuBTN.addEventListener('click', () => {
+            menu.classList.toggle('opened');
+        });
+    </script>
+</body>
+</html>
